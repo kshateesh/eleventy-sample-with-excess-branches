@@ -52,12 +52,6 @@ function getDataFromURL(url) {
 }
 
 function getDataFromAPI(url) {
-    const headers = new fetch.Headers();
-
-    headers.append('api_key', process.env.REACT_APP_CONTENTSTACK_API_KEY);
-    headers.append('access_token', process.env.REACT_APP_CONTENTSTACK_DELIVERY_TOKEN);
-    headers.append('accept', 'application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*');
-
     return fetch(
         url.toString(),
         {
