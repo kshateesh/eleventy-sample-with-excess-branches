@@ -27,7 +27,7 @@ async function get(request, response) {
         res = await getDataFromAPI(url)
         response.status(200).json(res);
     } catch (error) {
-        console.log({error: JSON.stringify(error));
+        console.log({error: JSON.stringify(error)});
         res = await getDataFromURL('https://jsonplaceholder.typicode.com/todos/1');
         response.status(200).json(
             {
