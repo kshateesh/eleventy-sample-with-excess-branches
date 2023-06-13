@@ -6,7 +6,7 @@ export default function handler(req, res) {
       console.log("Hello from eleventy website");
     res
       .status(200)
-      .json({ method: "GET", route: "id", params: req.params })
+      .json({ method: "GET", route: "id", params: req.params, headers: req.headers  })
   } else {
           console.log("Call not supported");
         res
