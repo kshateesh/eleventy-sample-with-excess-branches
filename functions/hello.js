@@ -1,5 +1,6 @@
 export default function handler(req, res) {
-
+      console.log("incoming headers");
+        console.log(req.headers);
 
   if (req.method === "GET") {
       console.log("Hello from eleventy website");
