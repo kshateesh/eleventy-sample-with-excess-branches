@@ -1,6 +1,9 @@
 export default function handler(req, res) {
-      console.log("incoming headers");
-        console.log(req.headers);
+ 
+for(let i = 0; i < 1001; i++){
+    console.log("This is log number ", i);
+}
+        
 
   if (req.method === "GET") {
       console.log("Hello from eleventy website");
